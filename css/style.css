@@ -101,6 +101,60 @@ p {
     height: 534px;
 }
 
+.teem {
+    display: flex;
+    flex-grow: 1;
+    width: 95%;
+    margin: 130px auto 0px auto;
+}
+
+.teem-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 50%;
+}
+
+.teem-images img {
+    width: 100%;
+}
+
+.teem-content {
+    width: 600px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teem-content h1 {
+    font-size: 45px;
+    width: 468px;
+}
+
+.teem-header-color-1 {
+    color: var(--Dark-03, #727272);
+    font-weight: 500;
+}
+
+.teem-header-color-2 {
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+}
+
+.teem-header-color-3 {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+.teem-content p {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 53px;
+}
+
 
 /* small responsive */
 @media screen and (max-width:576px) {
@@ -127,55 +181,76 @@ p {
         width: 100%;
         margin-top: -84px;
     }
-    .banner-images img{
+
+    .banner-images img {
         width: 80%;
         height: 220px;
     }
-    .banner-content h1{
-    font-size: 15px;
-}
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .teem {
+        flex-direction: column-reverse;
+    }
+
+    .teem-images {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .teem-content {
+
+        margin: 0px;
+
+        width: 100%;
+
+        margin-bottom: 27px;
+    }
+    .teem-content h1{width: 100%;margin-bottom: 20px;}
 }
 
 /* tab responsive */
 @media screen and (min-width:577px) and (max-width:992px) {
-    .header{
-}
+    .header {}
+
     .logo {
-        
-margin-left: 0px;
+
+        margin-left: 0px;
     }
 
     .nav {
-        
-flex-direction: column;
-        
-justify-content: center;
-        
-align-items: center;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
     }
 
-    .navbar ul {
-    }
+    .navbar ul {}
 
 
     .navbar {
 
-margin: 0px;
+        margin: 0px;
 
-margin-top: 28px;
+        margin-top: 28px;
 
-}
+    }
 
     .banner-content {
 
-width: 100%;
+        width: 100%;
 
-}
-    .banner-images img{
+    }
 
-width: 80%;
+    .banner-images img {
 
-height: 370px;
+        width: 80%;
 
-}
+        height: 370px;
+
+    }
 }
